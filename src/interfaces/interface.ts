@@ -2,9 +2,41 @@ export interface Url {
   type: string;
   url: string;
 }
+
+export interface ISizes {
+  portrait: {
+    small: string;
+    medium: string;
+    xlarge: string;
+    fantastic: string;
+    uncanny: string;
+    incredible: string;
+  };
+  standard: {
+    small: string;
+    medium: string;
+    large: string;
+    xlarge: string;
+    fantastic: string;
+    amazing: string;
+  };
+  landscape: {
+    small: string;
+    medium: string;
+    large: string;
+    xlarge: string;
+    amazing: string;
+    incredible: string;
+  };
+  fullsize: {
+    detail: "/detail";
+    fullsizeImg: "/full-size-image";
+  };
+}
 export interface Image {
   path: string;
   extension: string;
+  size: ISizes;
 }
 export interface ComicSummary {
   resourceURI: string;
